@@ -3,3 +3,5 @@
 Run `npm test` and change a test or source code to see HMR in action!
 
 Learn more at https://vitest.dev
+
+Run `npm test:ui` to see the very fancy Vitest UI app.

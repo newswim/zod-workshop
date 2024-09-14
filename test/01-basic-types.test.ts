@@ -1,11 +1,14 @@
-import { assert, expect, test } from 'vitest'
-import { PersonSchema } from '../src/01-basic-types.js'
+import { expect, test, describe } from 'vitest'
+import { stringSchema } from '../src/01-primitive-types.js'
 
-test('Basic types', () => {
-  expect(() => {
-    PersonSchema.parse({
-      name: 'John',
-      age: '30',
-    })
-  }).toThrow()
+describe('Basic types', () => {
+  test('stringSchema', () => {
+    expect(() => {
+      stringSchema.parse('hello')
+    }).not.to.throw()
+
+    expect(() => {
+      stringSchema.parse(42)
+    }).to.throw()
+  })
 })
