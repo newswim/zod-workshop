@@ -4,7 +4,6 @@ import { z } from 'zod'
 ///////////////////////////////// Legend //////////////////////////////////
 // ❓ = question / task
 // 🕵️ = hint
-// 💡 = solution
 // 💀 = extra / bonus / fun
 //
 //////////////
@@ -110,8 +109,8 @@ const stringIncludesAlign = z.never()
 //////// ! Do not edit the code below this line 🙏 ////////
 ///////////////////////////////////////////////////////////
 
-describe.skip('01 - Basic types - string', () => {
-  describe('strings', () => {
+describe('01 - Basic types - string', () => {
+  describe.skip('strings', () => {
     it('should not throw when parsing a string', () => {
       expect(() => {
         stringSchema.parse('hello')
@@ -185,7 +184,7 @@ describe.skip('01 - Basic types - string', () => {
     })
   })
 
-  describe('numbers', () => {
+  describe.skip('numbers', () => {
     it('should not throw when parsing a number', () => {
       expect(() => {
         numberSchema.parse(42)
@@ -248,7 +247,7 @@ describe.skip('01 - Basic types - string', () => {
     })
   })
 
-  describe('dates', () => {
+  describe.skip('dates', () => {
     it('should not throw when parsing YYYY-MM-DD date format', () => {
       expect(dateSchema.parse(new Date())).toBeInstanceOf(Date)
     })
@@ -304,7 +303,7 @@ describe.skip('01 - Basic types - string', () => {
     })
   })
 
-  describe('custom error messages', () => {
+  describe.skip('custom error messages', () => {
     it('can validate a string that includes the word "align"', () => {
       expect(stringIncludesAlign.parse('i love align')).toBe('i love align')
     })

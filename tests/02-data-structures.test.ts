@@ -84,8 +84,8 @@ const enumSchema = z.never()
 //////// ! Do not edit the code below this line 🙏 ////////
 ///////////////////////////////////////////////////////////
 
-describe.skip('02 - Data Structures', () => {
-  describe('objects', () => {
+describe('02 - Data Structures', () => {
+  describe.skip('objects', () => {
     it('should not throw when parsing a valid object', () => {
       expect(() => {
         GuyFieriSchema.parse({
@@ -140,7 +140,7 @@ describe.skip('02 - Data Structures', () => {
     })
   })
 
-  describe('records', () => {
+  describe.skip('records', () => {
     it('should not throw when parsing a valid record of strings', () => {
       expect(() => {
         recordSchema.parse({ foo: 'bar', baz: 'qux' })
@@ -172,7 +172,7 @@ describe.skip('02 - Data Structures', () => {
     })
   })
 
-  describe('arrays', () => {
+  describe.skip('arrays', () => {
     it('should not throw when parsing a valid array', () => {
       expect(() => {
         arraySchema.parse(['foo', 'bar'])
@@ -204,7 +204,7 @@ describe.skip('02 - Data Structures', () => {
     })
   })
 
-  describe('tuples', () => {
+  describe.skip('tuples', () => {
     it('should not throw when parsing a valid tuple', () => {
       expect(() => {
         tupleSchema.parse(['foo', 42])
@@ -230,7 +230,7 @@ describe.skip('02 - Data Structures', () => {
     })
   })
 
-  describe('unions', () => {
+  describe.skip('unions', () => {
     it('should not throw when parsing a valid union value', () => {
       expect(() => {
         unionSchema.parse('foo')
@@ -244,7 +244,7 @@ describe.skip('02 - Data Structures', () => {
     })
   })
 
-  describe('intersections', () => {
+  describe.skip('intersections', () => {
     it('should not throw when parsing a valid intersection value', () => {
       expect(() => {
         intersectionSchema.parse({ a: 'hello', b: 42 })
@@ -258,7 +258,7 @@ describe.skip('02 - Data Structures', () => {
     })
   })
 
-  describe('enums', () => {
+  describe.skip('enums', () => {
     it('should not throw when parsing a valid enum value', () => {
       expect(() => {
         enumSchema.parse('foo')

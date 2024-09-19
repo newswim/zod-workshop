@@ -21,7 +21,8 @@ https://zod.dev
 1. Open the `/tests` folder and start with the `01-basic-types` file.
 2. Run `npm run test` and change a test or source code to see HMR in action!
 3. Run `npm run test:ui` to see the very fancy Vitest UI app. (optional)
-4. Resist the urge to look in the `/solutions` folder unless you are absolutely
+4. Initially, the tests are all wrapped in `describe.skip()`, remove `.skip()` to start seeing test failures.
+5. Resist the urge to look in the `/solutions` folder unless you are absolutely
    stuck.
 
 More info about the test runner, check out https://vitest.dev
